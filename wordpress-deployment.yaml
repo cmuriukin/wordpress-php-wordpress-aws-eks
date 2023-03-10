@@ -36,10 +36,6 @@ spec:
               value: wordpress-mysql
             - name: WORDPRESS_DB_USER
               value: root
-              # valueFrom:
-              #   secretKeyRef:
-              #     name: mysql-secrets
-              #     key: username
             - name: WORDPRESS_DB_PASSWORD
               valueFrom:
                 secretKeyRef:
